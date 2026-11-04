@@ -1,0 +1,20 @@
+{
+  "author": "amina",
+  "name": "Le jardin d'Amina",
+  "slot": { "x": 1, "y": 0 },
+  "ground": "grass",
+  "buildings": [
+    { "x": 2, "y": 2, "w": 3, "h": 3, "height": 14, "color": "#e8d2a0", "roof": "dome", "roofColor": "#f0f0e8" }
+  ],
+  "decor": [
+    { "type": "baobab", "x": 6, "y": 1 },
+    { "type": "flowers", "x": 1, "y": 6 },
+    { "type": "flowers", "x": 2, "y": 6 },
+    { "type": "flowers", "x": 3, "y": 6 },
+    { "type": "fence", "x": 6, "y": 6 }
+  ],
+  "npcs": [
+    { "name": "Amina", "x": 5, "y": 5, "color": "#c04a7a", "skin": "#8a5a3b",
+      "dialogue": ["Ma maison est en JSON, rien de plus.", "Le baobab, c'est une ligne : { \"type\": \"baobab\" }."] }
+  ]
+}

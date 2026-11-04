@@ -1,0 +1,19 @@
+{
+  "author": "kofi",
+  "name": "L'atelier de Kofi",
+  "slot": { "x": 0, "y": 1 },
+  "ground": "earth",
+  "buildings": [
+    { "x": 1, "y": 1, "w": 4, "h": 3, "height": 22, "color": "#9a948a", "roof": "flat" },
+    { "x": 5, "y": 5, "w": 2, "h": 2, "height": 10, "color": "#b0663a", "roof": "thatch" }
+  ],
+  "decor": [
+    { "type": "palm", "x": 6, "y": 1 },
+    { "type": "pot", "x": 1, "y": 6 },
+    { "type": "pot", "x": 2, "y": 6, "color": "#6a3a1a" }
+  ],
+  "npcs": [
+    { "name": "Kofi", "x": 3, "y": 5, "color": "#3a8a6a", "skin": "#4a2e1a",
+      "dialogue": ["Ici on répare les ordis du quartier.", "La prochaine saison, on pourra scripter les PNJ."] }
+  ]
+}

@@ -1,0 +1,26 @@
+name: Valider les parcelles
+on:
+  pull_request:
+    paths: ['plots/**', 'engine/rules.js', 'scripts/**']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Fichiers modifiés
+        run: |
+          {
+            echo 'CHANGED_FILES<<EOF'
+            git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }}
+            echo EOF
+          } >> "$GITHUB_ENV"
+      - name: Validation
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_AUTHOR_ASSOCIATION: ${{ github.event.pull_request.author_association }}
+        run: node scripts/validate.mjs

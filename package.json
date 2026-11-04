@@ -1,0 +1,1 @@
+{ "name": "devcity", "private": true, "type": "module", "scripts": { "validate": "node scripts/validate.mjs", "index": "node scripts/build-index.mjs", "dev": "node scripts/build-index.mjs && npx -y serve ." } }

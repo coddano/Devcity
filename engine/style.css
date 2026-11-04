@@ -1,0 +1,8 @@
+html,body{margin:0;height:100%;background:#1b1410;overflow:hidden;font-family:ui-monospace,Menlo,Consolas,monospace;color:#fff3e0}
+canvas{display:block;width:100vw;height:100vh;image-rendering:pixelated;cursor:pointer}
+#hud{position:fixed;top:12px;left:12px;background:#000a;padding:8px 12px;border:2px solid #e0a040}
+#hud a{color:#ffd27a}
+#help{position:fixed;bottom:12px;left:12px;right:12px;text-align:center;font-size:12px;opacity:.7}
+#dialog{position:fixed;left:50%;bottom:48px;transform:translateX(-50%);width:min(560px,calc(100vw - 32px));background:#2a1d14f2;border:3px solid #e0a040;padding:12px 16px;box-sizing:border-box}
+#dialog p{margin:6px 0}
+#dialog small{opacity:.6}

@@ -1,0 +1,20 @@
+{
+  "author": "dano",
+  "name": "La concession de Dano",
+  "slot": { "x": 0, "y": 0 },
+  "ground": "sand",
+  "buildings": [
+    { "x": 1, "y": 1, "w": 3, "h": 2, "height": 16, "color": "#b0663a", "roof": "thatch", "roofColor": "#d4a64a" },
+    { "x": 5, "y": 1, "w": 2, "h": 2, "height": 12, "color": "#c47a44", "roof": "thatch" }
+  ],
+  "decor": [
+    { "type": "palm", "x": 0, "y": 6 },
+    { "type": "well", "x": 4, "y": 5 },
+    { "type": "pot", "x": 6, "y": 4 },
+    { "type": "drum", "x": 1, "y": 4 }
+  ],
+  "npcs": [
+    { "name": "Dano", "x": 3, "y": 4, "color": "#e0a040", "skin": "#6b4226",
+      "dialogue": ["Bienvenue à DevCity !", "Chaque parcelle est codée par un dev, via une pull request.", "Lis le README pour construire la tienne."] }
+  ]
+}
